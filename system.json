@@ -23,6 +23,6 @@
     "gridDistance": 0,
     "gridUnits": "Schritt",
     "initiative": "2d6",
-    "manifest": "https://gitlab.com/architech99/foundry-tinyd6/-/raw/master/system.json",
-    "download": "https://gitlab.com/architech99/foundry-tinyd6/-/archive/master/foundry-tinyd6-master.zip"
+    "manifest": "https://github.com/Realheimi/foundry-tinydsa/blob/main/system.json",
+    "download": "https://github.com/Realheimi/foundry-tinydsa/archive/refs/heads/main.zip"
 }
