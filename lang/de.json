@@ -1,0 +1,225 @@
+{
+  "tinydsa": {
+    "tinydsaHeroSheet": "Held",
+    "tinydsaNpcSheet": "NSC",
+    "system": {
+      "name": "Tiny D6 2e",
+      "dieRoller": "Proben"
+    },
+    "settings": {
+      "title": "System Einstellungen",
+      "label": "System Einstellungen",
+      "description": "Wähle die optionalen Regeln und Mechaniken, die du aktivieren möchtest, aus den folgenden Optionen.",
+      "theme": {
+        "name": "Thema",
+        "hint": "Hiermit kannst du deine Welt für ein bestimmtes Tiny D6 Spiel einstellen.",
+        "choices": {
+          "cthulhu": "Tiny Cthulhu",
+          "dungeon": "Tiny Dungeon 2e"
+        }
+      },
+      "enableCorruption": {
+        "name": "Korruptionsleiste aktivieren",
+        "hint": "Füge eine Leiste für Korruption auf dem Charakterbogen hinzu."
+      },
+      "enableAdvancement": {
+        "name": "Charakterentwicklung",
+        "hint": "Charaktere entwickeln sich entweder basierend auf einer Anzahl von Sitzungen oder durch die Vergabe von Erfahrungspunkten weiter",
+        "choices": {
+          "none": "Keine",
+          "minimalist": "Minimalistische Entwicklung",
+          "xp": "Erfahrungspunkte"
+        }
+      },
+      "enableItemTracking": {
+        "name": "Aktiviere Inventarverwaltung",
+        "hint": "Zeige Felder zum Eintragen für Gegenstände an und berechne die verbleibenden Inventarfelder."
+      },
+      "enableDepletionPoints": {
+        "name": "Aktiviere Verschleißpunkte",
+        "hint": "Wenn ein Gegenstand Verschleißpunkte verwendet, verfolge sie für die Gegenstände des Charakters."
+      },
+      "enableCriticalHits": {
+        "name": "Aktiviere Kritische Treffer",
+        "hint": "Markiere eine Probe als 'Kritischen Treffer' wenn alle Würfel eine Ergebnis von 5 oder 6 haben."
+      },
+      "enableVariableWeaponDamage": {
+        "name": "Variabler Waffenschaden",
+        "hint": "Berechne variablen Waffenschaden für Angriffsproben."
+      },
+      "enableDamageReduction": {
+        "name": "Aktiviere Schadensminderung",
+        "hint": "Rüstung bietet eine statischen Schadensminderung, wenn sie ausgerüstet ist."
+      }
+    },
+    "dice": {
+      "modifier": {
+        "focus": "Konzentration",
+        "marksman": "Scharfschütze"
+      },
+      "roll": {
+        "disadvantage": "Nachteil",
+        "standard": "Standart Probe",
+        "advantage": "Vorteil"
+      }
+    },
+    "sheet": {
+      "newItem": "Neuer Gegenstand",
+      "description": "Beschreibung",
+      "none": "Keine"
+    },
+    "actor": {
+      "name": "Name",
+      "npc": "NSC",
+      "people": "Personen",
+      "traits": "Merkmale",
+      "description": "Beschreibung",
+      "tiny-cthulhu": {
+        "character": "Bio",
+        "heritage": {
+          "header": "Spezies",
+          "traits": "Spezies Merkmal",
+          "delete": "Entferne Spezies"
+        },
+        "culture": {
+          "header": "Kultur",
+          "traits": "Kultur Merkmal",
+          "delete": "Entferne Kultur"
+        }
+      },
+      "tiny-dsa": {
+        "character": "Held",
+        "heritage": {
+          "header": "Spezies",
+          "traits": "Spezies Merkmal",
+          "delete": "Entferne Spezies"
+        },
+        "culture": {
+          "header": "Kultur",
+          "traits": "Kultur Merkmal",
+          "delete": "Entferne Kultur"
+        }
+      },
+
+      "tiny-dungeon": {
+        "character": "Character",
+        "heritage": {
+          "header": "Vermächtnis",
+          "traits": "Vermächtnis Merkmal",
+          "delete": "Vermächtnis entfernen"
+        }
+      },
+      "homeland": "Heimatland",
+      "age": "Alter",
+      "eyes": "Augen",
+      "hair": "Haare",
+      "familyTrade": "Ausbildung",
+      "belief": "Überzeugung",
+      "xp": {
+        "header": "Erfahrung",
+        "progression": "Entwicklung",
+        "total": "Total",
+        "spent": "Ausgegeben",
+        "remaining": "Verbelibend"
+      },
+      "wounds": {
+        "header": "Trefferpunkt",
+        "current": "Aktuell",
+        "max": "Max:",
+        "increaseMax": "Erhöhung Max TP",
+        "help": "Markiere ein Kästchen, wenn du Schaden erleidest. Entferne das Häkchen, wenn du geheilt bist."
+      },
+      "corruption": {
+        "test": "Korruptions Probe",
+        "header": "Korruption",
+        "current": "Aktuell",
+        "max": "Max:",
+        "increaseMax": "Erhöhung Korruptionsschwelle",
+        "help": "Markiere ein Kästchen, wenn du eine Korruption erleidest. Entferne das Häkchen, wenn du dich erholt hast."
+      },
+      "proficiencies": {
+        "header": "Waffenumgang",
+        "mastered": "Gemeisterte Waffen"
+      },
+      "gear": "Ausrüstung",
+      "equipped": "Ausgerüstet",
+      "weaponry": "Bewaffnung",
+      "wearing": "Getragen",
+      "actions": {
+        "editTrait": "Merkmal bearbeiten",
+        "deleteTrait": "Merkmal entfernen"
+      }
+    },
+    "weaponCategories":
+    {
+      "melee": "Nahkampf",
+      "ranged": "Fernkampf"
+    },
+    "weaponTypes": {
+      "none": "",
+      "light": "Leicht",
+      "heavy": "Schwer"
+    },
+    "armorTypes": {
+      "none": "",
+      "light": "Leichte",
+      "medium": "Mittlere",
+      "heavy": "Schwere"
+    },
+    "corruptionTests": {
+      "none": "Keine",
+      "disadvantage": "Nachteil",
+      "standard": "Standart"
+    },
+    "weapon": {
+      "name": "Name",
+      "type": "Waffen Art",
+      "damage": "Schaden",
+      "slots": "Inventarfelder",
+      "description": "Beschreibung",
+      "light": "Leicht",
+      "heavy": "Schwer",
+      "ranged": "Fernkampf",
+      "lightMelee": "L. Nahkampf",
+      "heavyMelee": "S. Nahkampf",
+      "lightRanged": "L. Fernkampf",
+      "heavyRanged": "S. Fernkampf",
+      "Ranged": "Fernkampf",
+      "lightShort": "L",
+      "heavyShort": "S",
+      "meleeShort": "N",
+      "rangedShort": "F"
+    },
+    "armor": {
+      "name": "Name",
+      "type": "Rüstung Art",
+      "damageReduction": "SM",
+      "slots": "Inventarfelder",
+      "depletion": "Verschleiß",
+      "description": "Beschreibung",
+      "none": "Keine Rüstung"
+    },
+    "gear": {
+      "name": "Name",
+      "slots": "Inventarfelder",
+      "depletion": "Verschleiß",
+      "quantity": "Quantity",
+      "description": "Beschreibung"
+    },
+    "heritage": {
+      "trait": "Vermächtnis Merkmal",
+      "startingHealth": "TP zu Beginn",
+      "corruptionThreshold": "Korruptionsschwelle"
+    },
+    "trait": {
+      "name": "Name",
+      "description": "Beschreibung"
+    }
+  },
+
+  "weapon": "Waffen",
+  "armor": "Rüstung",
+  "gear": "Ausrüstung",
+  "heritage": "Vermächtnis",
+  "trait": "Merkmal"
+}
