@@ -18,7 +18,7 @@
             "lang": "de",
             "name": "Deutsch",
             "path": "lang/de.json"
-        },
+        }
     ],
     "gridDistance": 0,
     "gridUnits": "Schritt",
