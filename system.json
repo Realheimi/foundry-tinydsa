@@ -1,0 +1,28 @@
+{
+    "name": "tinydsa",
+    "title": "Tiny DSA (Unofficial)",
+    "description": "Tiny DSA (TDSA) system Modul für Foundry VTT zum spielen von DSA mit Tiny D6 Regeln. (Based on architech99 Tindd6.)",
+    "author": "Realheimi",
+    "version": "0.0.1",
+    "minimumCoreVersion": "0.7.9",
+    "compatibleCoreVersion": "0.7.9",
+    "esmodules": [
+        "module/tinyd6.js"
+    ],
+    "styles": [
+        "css/tinyd6.css"
+    ],
+    "packs": [],
+    "languages": [
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json"
+        },
+    ],
+    "gridDistance": 0,
+    "gridUnits": "Schritt",
+    "initiative": "2d6",
+    "manifest": "https://gitlab.com/architech99/foundry-tinyd6/-/raw/master/system.json",
+    "download": "https://gitlab.com/architech99/foundry-tinyd6/-/archive/master/foundry-tinyd6-master.zip"
+}
