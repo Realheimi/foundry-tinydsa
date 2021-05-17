@@ -3,7 +3,7 @@
     "title": "Tiny DSA (Unofficial)",
     "description": "Tiny DSA (TDSA) system Modul für Foundry VTT zum spielen von DSA mit Tiny D6 Regeln. (Based on architech99 Tindd6.)",
     "author": "Realheimi",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "minimumCoreVersion": "0.7.9",
     "compatibleCoreVersion": "0.7.9",
     "esmodules": [
