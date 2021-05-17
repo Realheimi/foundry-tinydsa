@@ -3,7 +3,7 @@
     "tinydsaHeroSheet": "Held",
     "tinydsaNpcSheet": "NSC",
     "system": {
-      "name": "Tiny D6 2e",
+      "name": "Tiny DSA",
       "dieRoller": "Proben"
     },
     "settings": {
@@ -15,7 +15,8 @@
         "hint": "Hiermit kannst du deine Welt für ein bestimmtes Tiny D6 Spiel einstellen.",
         "choices": {
           "cthulhu": "Tiny Cthulhu",
-          "dungeon": "Tiny Dungeon 2e"
+          "dungeon": "Tiny Dungeon 2e",
+          "dsa": "Tiny DSA"
         }
       },
       "enableCorruption": {
