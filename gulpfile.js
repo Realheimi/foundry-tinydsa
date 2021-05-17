@@ -5,7 +5,7 @@ const nano = require('gulp-clean-css');
 const sass = require('gulp-sass');
 
 const paths = {
-    css: [ "scss/tinyd6.scss" ]
+    css: [ "scss/tinydsa.scss" ]
 };
 
 const buildPaths = {
@@ -15,7 +15,7 @@ const buildPaths = {
 function css()
 {
     return src(paths.css)
-        .pipe(concat('tinyd6.css'))
+        .pipe(concat('tinydsa.css'))
         .pipe(sass())
         .pipe(nano())
         .pipe(dest(buildPaths.css));

@@ -1,23 +1,23 @@
 <form class="actor-sheet {{cssClass}}" autocomplete="off">
 
     <section class="character">
-        <h2 class="floating-header">{{localize "tinyd6.actor.npc"}}</h2>
+        <h2 class="floating-header">{{localize "tinydsa.actor.npc"}}</h2>
         <div class="row">
             <div class="col stat-values">
                 <div class="name property d-flex justify-content-between border-bottom">
-                    <label><span>{{localize "tinyd6.actor.name"}}</span></label>
-                    <input name="name" type="text" class="text-right" value="{{actor.name}}" placeholder="{{localize "tinyd6.actor.name"}}"/>
+                    <label><span>{{localize "tinydsa.actor.name"}}</span></label>
+                    <input name="name" type="text" class="text-right" value="{{actor.name}}" placeholder="{{localize "tinydsa.actor.name"}}"/>
                 </div>
                 <div class="description property">
-                    <label class="border-bottom"><span>{{localize "tinyd6.actor.description"}}</span></label>
+                    <label class="border-bottom"><span>{{localize "tinydsa.actor.description"}}</span></label>
                     {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
                 </div>
 
                 <section class="trauma">
                     <div class="d-flex justify-content-between">
-                        <h2 class="section-header">{{localize "tinyd6.actor.wounds.header"}}</h2>
+                        <h2 class="section-header">{{localize "tinydsa.actor.wounds.header"}}</h2>
                         <span class="d-flex justify-content-end ml-auto">
-                        <span class="mr-2">{{localize "tinyd6.actor.wounds.max"}}</span>
+                        <span class="mr-2">{{localize "tinydsa.actor.wounds.max"}}</span>
                             {{#if owner}}
                                 <input name="data.wounds.max" type="text" class="mx-2" style="width: 10%;"
                                        value="{{data.wounds.max}}" dType="Number"/>
@@ -33,7 +33,7 @@
                         {{/times}}
                     </div>
                     {{#if owner}}
-                        <p class="help">{{localize "tinyd6.actor.wounds.help"}}</p>
+                        <p class="help">{{localize "tinydsa.actor.wounds.help"}}</p>
                     {{/if}}
                 </section>
 
@@ -46,7 +46,7 @@
                     {{#if config.enableCorruption}}
                         <div class="corruption-test property">
                             <label class="border-bottom d-flex justify-content-between">
-                                <span>{{localize "tinyd6.actor.corruption.test"}}</span>
+                                <span>{{localize "tinydsa.actor.corruption.test"}}</span>
                             </label>
                             <select name="data.corruptionTest" class="w-100">
                                 {{#select data.corruptionTest}}
@@ -66,12 +66,12 @@
                                 </a>
                             </span>
                             <label class="border-bottom d-flex justify-content-between">
-                                <span>{{localize "tinyd6.actor.traits"}}</span>
+                                <span>{{localize "tinydsa.actor.traits"}}</span>
                             </label>
                         </div>
                         <ul class="actor-items px-0"> {{log traits}}
                             {{#each traits as |trait id|}}
-                                {{> "systems/tinyd6/templates/partials/trait-block.hbs" trait}}
+                                {{> "systems/tinydsa/templates/partials/trait-block.hbs" trait}}
                             {{/each}}
                         </ul>
                     </section>

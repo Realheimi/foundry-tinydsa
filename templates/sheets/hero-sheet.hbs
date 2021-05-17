@@ -1,7 +1,7 @@
 <form class="actor-sheet {{classes}} m-0" autocomplete="off">
     {{#if owner}}
         <div class="mb-3">
-            {{> "systems/tinyd6/templates/partials/roll-bar.hbs" flexClass=""}}
+            {{> "systems/tinydsa/templates/partials/roll-bar.hbs" flexClass=""}}
         </div>
     {{/if}}
 
@@ -10,8 +10,8 @@
         <div class="row">
             <div class="col stat-values">
                 <div class="name property d-flex justify-content-between border-bottom">
-                    <label><span>{{localize "tinyd6.actor.name"}}</span></label>
-                    <input name="name" type="text" class="text-right" value="{{actor.name}}" placeholder="{{localize "tinyd6.actor.name"}}"/>
+                    <label><span>{{localize "tinydsa.actor.name"}}</span></label>
+                    <input name="name" type="text" class="text-right" value="{{actor.name}}" placeholder="{{localize "tinydsa.actor.name"}}"/>
                 </div>
                 <div class="heritage property d-flex justify-content-between border-bottom" data-item-id="{{heritage._id}}">
                     <label><span>{{localize config.heritageHeaderPath}}</span></label>
@@ -23,12 +23,12 @@
                     {{/if}}
                 </div>
                 <div class="family-trade property d-flex justify-content-between border-bottom">
-                    <label class="text-nowrap"><span>{{localize "tinyd6.actor.familyTrade"}}</span></label>
-                    <input name="data.familyTrade" type="text" class="text-right" value="{{data.familyTrade}}" placeholder="{{localize "tinyd6.actor.familyTrade"}}"/>
+                    <label class="text-nowrap"><span>{{localize "tinydsa.actor.familyTrade"}}</span></label>
+                    <input name="data.familyTrade" type="text" class="text-right" value="{{data.familyTrade}}" placeholder="{{localize "tinydsa.actor.familyTrade"}}"/>
                 </div>
                 <div class="belief property">
-                    <label class="border-bottom"><span>{{localize "tinyd6.actor.belief"}}</span></label>
-                    <input name="data.belief" type="text" value="{{data.belief}}" placeholder="{{localize "tinyd6.actor.belief"}}"/>
+                    <label class="border-bottom"><span>{{localize "tinydsa.actor.belief"}}</span></label>
+                    <input name="data.belief" type="text" value="{{data.belief}}" placeholder="{{localize "tinydsa.actor.belief"}}"/>
                 </div>
             </div>
             <div class="col-3 pt-3 text-center">
@@ -37,7 +37,7 @@
         </div>
         <div class="stat-values">
             <div class="description property">
-                <label class="border-bottom"><span>{{localize "tinyd6.actor.description"}}</span></label>
+                <label class="border-bottom"><span>{{localize "tinydsa.actor.description"}}</span></label>
                 {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
             </div>
         </div>
@@ -47,9 +47,9 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-between">
-                    <h2 class="section-header">{{localize "tinyd6.actor.wounds.header"}}</h2>
+                    <h2 class="section-header">{{localize "tinydsa.actor.wounds.header"}}</h2>
                     <span class="d-flex justify-content-end ml-auto">
-                        <span class="mr-2">{{localize "tinyd6.actor.wounds.max"}}</span>
+                        <span class="mr-2">{{localize "tinydsa.actor.wounds.max"}}</span>
                         {{#if owner}}
                             <input name="data.wounds.max" type="text" class="mx-2" style="width: 10%;" value="{{data.wounds.max}}" dType="Number"/>
                         {{^}}
@@ -63,15 +63,15 @@
                     {{/times}}
                 </div>
                 {{#if owner}}
-                    <p class="help">{{localize "tinyd6.actor.wounds.help"}}</p>
+                    <p class="help">{{localize "tinydsa.actor.wounds.help"}}</p>
                 {{/if}}
             </div>
             {{#if config.enableCorruption}}
                 <div class="col">
                     <div class="d-flex justify-content-between">
-                        <h2 class="section-header">{{localize "tinyd6.actor.corruption.header"}}</h2>
+                        <h2 class="section-header">{{localize "tinydsa.actor.corruption.header"}}</h2>
                         <span class="d-flex justify-content-end ml-auto">
-                        <span class="mr-2">{{localize "tinyd6.actor.corruption.max"}}</span>
+                        <span class="mr-2">{{localize "tinydsa.actor.corruption.max"}}</span>
                             {{#if owner}}
                                 <input name="data.corruptionThreshold.max" type="text" class="mx-2" style="width: 10%;" value="{{data.corruptionThreshold.max}}" dType="Number"/>
                             {{^}}
@@ -85,24 +85,24 @@
                         {{/times}}
                     </div>
                     {{#if owner}}
-                        <p class="help">{{localize "tinyd6.actor.corruption.help"}}</p>
+                        <p class="help">{{localize "tinydsa.actor.corruption.help"}}</p>
                     {{/if}}
                 </div>
             {{/if}}
             {{#if (eq config.advancementMethod 'xp')}}
                 <div class="col-3">
                     <section class="experience d-flex flex-column justify-content-between">
-                        <h3 class="section-header">{{localize "tinyd6.actor.xp.header"}}</h3>
+                        <h3 class="section-header">{{localize "tinydsa.actor.xp.header"}}</h3>
                         <div class="stat-values property d-flex justify-content-between border-bottom">
-                            <label class="mr-2"><span>{{localize "tinyd6.actor.xp.total"}}</span></label>
-                            <input name="data.xp.max" class="text-right" type="text" value="{{data.xp.max}}" placeholder="{{localize "tinyd6.actor.xp.total"}}" dType="Number"/>
+                            <label class="mr-2"><span>{{localize "tinydsa.actor.xp.total"}}</span></label>
+                            <input name="data.xp.max" class="text-right" type="text" value="{{data.xp.max}}" placeholder="{{localize "tinydsa.actor.xp.total"}}" dType="Number"/>
                         </div>
                         <div class="stat-values property d-flex justify-content-between border-bottom">
-                            <label class="mr-2"><span>{{localize "tinyd6.actor.xp.spent"}}</span></label>
-                            <input name="data.xp.spent" class="text-right" type="text" value="{{data.xp.spent}}" placeholder="{{localize "tinyd6.actor.xp.spent"}}" dType="Number"/>
+                            <label class="mr-2"><span>{{localize "tinydsa.actor.xp.spent"}}</span></label>
+                            <input name="data.xp.spent" class="text-right" type="text" value="{{data.xp.spent}}" placeholder="{{localize "tinydsa.actor.xp.spent"}}" dType="Number"/>
                         </div>
                         <div class="stat-values property d-flex justify-content-between border-bottom">
-                            <label class="mr-2"><span>{{localize "tinyd6.actor.xp.remaining"}}</span></label>
+                            <label class="mr-2"><span>{{localize "tinydsa.actor.xp.remaining"}}</span></label>
                             <span class="d-block">
                                 {{data.xp.remaining}}
                             </span>
@@ -113,7 +113,7 @@
             {{#if (eq config.advancementMethod 'minimalist')}}
                 <div class="col-3">
                     <section class="experience d-flex flex-column justify-content-between">
-                        <h3 class="section-header">{{localize "tinyd6.actor.xp.progression"}}</h3>
+                        <h3 class="section-header">{{localize "tinydsa.actor.xp.progression"}}</h3>
                         <div class="d-flex">
                             {{#times data.advancement.max}}
                                 <input type="checkbox" value="1" class="advancement-progress-box d-inline-block" {{#if (lt . ../data.advancement.value)}}checked{{/if}} />
@@ -126,37 +126,37 @@
     </section>
 
     <section class="proficiencies">
-        <h2 class="section-header">{{localize "tinyd6.actor.proficiencies.header"}}</h2>
+        <h2 class="section-header">{{localize "tinydsa.actor.proficiencies.header"}}</h2>
         <div class="d-flex justify-content-start">
             <div class="light mr-4">
                 <label>
                     <input type="checkbox" name="data.proficiencies.lightMelee" {{checked data.proficiencies.lightMelee}}/>
-                    {{localize "tinyd6.weapon.lightMelee"}}
+                    {{localize "tinydsa.weapon.lightMelee"}}
                 </label>
             </div>
             <div class="heavy mr-4">
                 <label>
                     <input type="checkbox" name="data.proficiencies.heavyMelee" {{checked data.proficiencies.heavyMelee}}/>
-                    {{localize "tinyd6.weapon.heavyMelee"}}
+                    {{localize "tinydsa.weapon.heavyMelee"}}
                 </label>
             </div>
             <div class="ranged mr-4">
                 <label>
                     <input type="checkbox" name="data.proficiencies.Ranged" {{checked data.proficiencies.Ranged}}/>
-                    {{localize "tinyd6.weapon.Ranged"}}
+                    {{localize "tinydsa.weapon.Ranged"}}
                 </label>
             </div>
         </div>
         <div class="d-flex justify-content-start mt-2">
-            <label class="mr-2"><h3 class="section-header">{{localize "tinyd6.actor.proficiencies.mastered"}}</h3></label>
+            <label class="mr-2"><h3 class="section-header">{{localize "tinydsa.actor.proficiencies.mastered"}}</h3></label>
             <span class="border-bottom w-100">
-                <input name="data.proficiencies.masteredWeapons" type="text" value="{{data.proficiencies.masteredWeapons}}" placeholder="{{localize "tinyd6.sheet.none"}}"/>
+                <input name="data.proficiencies.masteredWeapons" type="text" value="{{data.proficiencies.masteredWeapons}}" placeholder="{{localize "tinydsa.sheet.none"}}"/>
             </span>
         </div>
     </section>
 
     <section class="traits">
-        <h2 class="floating-header">{{localize "tinyd6.actor.traits"}}</h2>
+        <h2 class="floating-header">{{localize "tinydsa.actor.traits"}}</h2>
         <div class="floating-action">
             <a class="item-add" data-type="trait">
                 <span class="fas fa-plus"></span>
@@ -168,13 +168,13 @@
         </div>
         <ul class="actor-items px-0">
             {{#each traits as |trait id|}}
-                {{> "systems/tinyd6/templates/partials/trait-block.hbs" trait}}
+                {{> "systems/tinydsa/templates/partials/trait-block.hbs" trait}}
             {{/each}}
         </ul>
     </section>
 
     <section class="inventory">
-        <h2 class="floating-header">{{localize "tinyd6.actor.gear"}}</h2>
+        <h2 class="floating-header">{{localize "tinydsa.actor.gear"}}</h2>
         <section class="equipment">
             <div class="row">
                 <div class="col">
@@ -184,19 +184,19 @@
                                 <h3 class="weapon-name">{{weapon.name}}</h3>
                                 <label class="light ml-auto">
                                     <input type="checkbox" disabled{{#if (eq weapon.data.damageType "light")}} checked{{/if}}/>
-                                    {{localize "tinyd6.weapon.lightShort"}}
+                                    {{localize "tinydsa.weapon.lightShort"}}
                                 </label>
                                 <label class="heavy">
                                     <input type="checkbox" disabled{{#if (eq weapon.data.damageType "heavy")}} checked{{/if}}/>
-                                    {{localize "tinyd6.weapon.heavyShort"}}
+                                    {{localize "tinydsa.weapon.heavyShort"}}
                                 </label>
                                 <label class="ranged">
                                     <input type="checkbox" disabled{{#if (eq weapon.data.group "melee")}} checked{{/if}}/>
-                                    {{localize "tinyd6.weapon.meleeShort"}}
+                                    {{localize "tinydsa.weapon.meleeShort"}}
                                 </label>
                                 <label class="ranged">
                                     <input type="checkbox" disabled{{#if (eq weapon.data.group "ranged")}} checked{{/if}}/>
-                                    {{localize "tinyd6.weapon.rangedShort"}}
+                                    {{localize "tinydsa.weapon.rangedShort"}}
                                 </label>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
                     {{#each armor as |armor id|}}
                         <span>{{armor.name}}</span>
                     {{/each}}
-                    {{#unless armor}}<span>{{localize "tinyd6.armor.none"}}</span>{{/unless}}
+                    {{#unless armor}}<span>{{localize "tinydsa.armor.none"}}</span>{{/unless}}
                 </div>
             </div>
         </section>
@@ -215,7 +215,7 @@
         <section class="owned-items">
             <div class="row">
                 {{#each gear as |gearItem id|}}
-                    {{> "systems/tinyd6/templates/partials/inventory-card.hbs" gearItem=gearItem tagName="div" classes="col-4" }}
+                    {{> "systems/tinydsa/templates/partials/inventory-card.hbs" gearItem=gearItem tagName="div" classes="col-4" }}
                 {{/each}}
             </div>
         </section>
